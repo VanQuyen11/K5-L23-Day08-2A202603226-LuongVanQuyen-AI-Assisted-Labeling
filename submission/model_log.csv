@@ -1,1 +1,3 @@
 run_id,part,model,params,split,n_boxes,sec_per_img,what_went_right,what_went_wrong,decision
+r01,,yolo26-s,--model yolo26 --size s --split pilot --conf 0.25 --out work/prelabel/t_y26,pilot,195,0.39,,,,work\prelabel\t_y26,cpu,8,0,umbrellax8;handbagx1;traffic lightx1;backpackx2,
+r02,,yolo26-s,--model yolo26 --size s --split pilot --conf 0.5 --out work/prelabel/t_y26_c05,pilot,131,0.35,,,,work\prelabel\t_y26_c05,cpu,8,0,umbrellax3;traffic lightx1;backpackx1,
