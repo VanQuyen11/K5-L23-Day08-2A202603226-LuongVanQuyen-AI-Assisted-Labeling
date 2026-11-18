@@ -1,2 +1,3 @@
 step,images,minutes,note
-gold_manual,gold 4 batch 24,30 phút,
+gold_manual,4,30,Gán tay 4 ảnh gold trong CVAT
+batch_review,24,30,Duyệt 24 ảnh; đã trừ thời gian nghỉ
