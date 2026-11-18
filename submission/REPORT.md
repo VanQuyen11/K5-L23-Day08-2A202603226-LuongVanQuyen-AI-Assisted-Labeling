@@ -1,4 +1,4 @@
-# Báo cáo Day 08 — <<MSHV - Họ và tên>>
+# Báo cáo Day 08 — <2A202603226 - Lương Văn Quyến>
 
 > Một file duy nhất cho cả bài (đã gộp recipe, QC và ghi chú cá nhân). Mọi con số kèm **mẫu số** và nguồn (file nào). Viết bằng lời của bạn.
 
@@ -19,27 +19,27 @@
 
 | Trạng thái | Số | Tỉ lệ | Mẫu số |
 |---|---|---|---|
-| accepted | <<>> | <<>> | <<box máy>> |
-| edited | <<>> | <<>> | <<>> |
-| deleted | <<>> | <<>> | <<>> |
-| added | <<>> | <<>> | <<đối tượng sau duyệt>> |
+| accepted | 441 | 84,2% | 524 box máy |
+| edited | 21 | 4,0% | 524 box máy |
+| deleted | 52 | 9,9% | 524 box máy |
+| added | 24 | 4,9% | 486 đối tượng sau duyệt |
 
-- Lớp nào máy tệ nhất? Vì sao (dẫn ảnh)? <<>>
-- So với gold: precision / recall của **máy** <<>> (mẫu số: <<đối tượng gold>>)
+- Nguồn: submission/qc/review_stats.json.
+- So với gold: precision = 54/68 = 79,4%; recall = 54/71 = 76,1%, trên 4 ảnh gold.
 
 ## 3. Thiên kiến tự động hóa và ảnh bẫy
 
-- Bắt bẫy: <<.../12>>; loại nào lọt: <<>>; vì sao (bạn đã bỏ bước nào của checklist)? <<>>
-- Accepted cao mà bắt bẫy thấp (hoặc ngược lại) nói gì về cách bạn duyệt? <<>>
+- Bắt bẫy: lượt đầu 7/12 = 58,3%; sau khi sửa đạt 11/12 = 91,7% (nguồn: `qc/review_stats.json`). Còn lọt `img_023.jpg`, loại `loose`. Nguyên nhân cụ thể và bước checklist đã bỏ qua: .
+- Accepted cao mà bắt bẫy thấp nói gì về cách bạn duyệt? <<>>
 
 ## 4. Máy có đáng dùng không?
 
-- Thời gian (từ `time_log.csv`): gán tay <<... phút/ảnh>> vs duyệt <<... phút/ảnh>>. Thiên lệch (bạn gán gold trước nên đã quen cảnh): <<>>
-- Kết luận: <<có / không / chỉ cho lớp nào>>, dựa trên <<số liệu>>
-- **Ba quy tắc giảm thiên kiến của bạn** (mỗi quy tắc kiểm tra được bằng số hoặc việc làm):
-  1. <<>>
-  2. <<>>
-  3. <<>>
+- Thời gian (từ `time_log.csv`): gán tay 30/4 = 7,5 phút/ảnh; duyệt có pre-label 30/24 = 1,25 phút/ảnh.Việc gán gold trước cũng giúp tôi quen cảnh, có thể khiến lượt review nhanh hơn.
+- Kết luận: [có ], dựa trên [khoảng 1h30 ].
+- **Ba quy tắc giảm thiên kiến của bạn** (chỉ giữ nếu bạn sẽ áp dụng):
+  1. Ẩn toàn bộ nhãn và quét hết ảnh trước khi hiện box máy.
+  2. Kiểm từng ảnh theo thứ tự: bỏ sót, box thừa, sai lớp, box không sát; không bỏ qua box có confidence cao.
+  3. Ghi riêng thời gian review và sửa bổ sung; kiểm tra kết quả sau mỗi lần export thay vì chỉ dựa vào tỉ lệ accepted.
 
 ## 5. Mask SAM cho 3 vật (Part 5)
 
