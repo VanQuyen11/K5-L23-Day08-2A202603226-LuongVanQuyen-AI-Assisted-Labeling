@@ -1,0 +1,11 @@
+image,object_id,error_type,reviewer,note
+img_003.jpg,13,sai_vi_tri_kich_thuoc,Luong Van Quyen,"Box xe máy đỏ bên trái cắt mất phần bánh phía dưới"
+img_006.jpg,,khong,Luong Van Quyen,"Chưa thấy lỗi rõ ở ảnh tổng quan; cần kiểm thêm vùng nhãn chồng nhau"
+img_010.jpg,119,thua,Luong Van Quyen,"Box bicycle bao một phần xích lô đã có box three_wheeler"
+img_010.jpg,111,thua,Luong Van Quyen,"Box bicycle bao bộ phận của xích lô đã được gán riêng"
+img_013.jpg,,khong,Luong Van Quyen,"Chưa thấy lỗi rõ ở ảnh tổng quan sau khi bổ sung xe ba bánh phía xa"
+img_017.jpg,,bo_sot,Luong Van Quyen,"Xe tuk-tuk phía sau bên trái bị người đi bộ che chưa có box riêng; cần kiểm ngưỡng phần nhìn thấy"
+img_018.jpg,189,sai_lop,Luong Van Quyen,"Xe khách màu sáng phía trên giữa ảnh bị gán three_wheeler"
+img_024.jpg,308,thua,Luong Van Quyen,"Box car phía dưới ảnh bao vùng vệt đèn; không thấy xe có biên xác định"
+img_024.jpg,311,thua,Luong Van Quyen,"Box car phía dưới bên phải bao vùng đường và vệt sáng; không thấy xe có biên xác định"
+img_035.jpg,,khong,Luong Van Quyen,"Chưa thấy lỗi rõ ở ảnh tổng quan; cần kiểm thêm người và xe bị che"

@@ -1,1 +1,4 @@
 case_id,image,nguon,van_de,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline
+CAL-01,img_013.jpg,loi_may,"Mask SAM của tuk-tuk lấy thừa bánh xe máy bên cạnh","Không coi vùng lấy thừa là một phần của xe tuk-tuk","Mục 4.2 đã yêu cầu tách riêng các vật; cần sửa mask, không đổi quy tắc",v1.1
+CAL-02,img_013.jpg,cau_hoi_mo,"Kính chắn gió nhìn xuyên qua có thuộc mask xe không?","Giữ vùng kính thuộc mask xe; người được gán riêng theo phần nhìn thấy và quy tắc vùng chạm nhau","Bổ sung mục 4.2: phân biệt kính thuộc xe với khoảng hở không có kính",v1.1
+CAL-03,img_023.jpg,bay_lot,"Box xe ba bánh nhỏ sát mép ảnh còn bị báo loose","Phóng to và kiểm tra box bao đủ phần xe nhìn thấy; giới hạn tại mép ảnh","Quy tắc box sát vật và dừng tại mép ảnh đã có ở mục 4.1; không bổ sung",v1.1
